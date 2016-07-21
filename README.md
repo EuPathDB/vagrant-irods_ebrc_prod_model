@@ -95,13 +95,18 @@ Listed as `username/password`
 
   - `icatadmin/passWORD` : full administrator of the irods zone, i.e.
   can run all the `iadmin` commands.
-  - `wrkspuser/passWORD` : for workspaces development, has RW rights to `/ebrc/workspaces`
-  - `rods` : (no password) The system account that runs the irods processes. This system
-  account is preconfigured with `icatadmin` credentials and that should
-  not be changed. You can `sudo su - irods` to access this system
-  account and then issue iCommands as an administration.
-  - `irods/passWORD` : postgres database admin account (you should not
-  need to use this)
+  - `wrkspuser/passWORD` : iRODS account for workspaces development.
+  This has read/write rights to `/ebrc/workspaces`.
+  - `rods` : (no password) The operating system account that runs the irods
+  processes. This system account is preconfigured with `icatadmin`
+  credentials and that should not be changed. You can `sudo su - irods`
+  to access this system account and then issue iCommands as the irods
+  administrator.
+  - `irods/passWORD` : The admin account for the `ICAT` Postgres
+  database. You typically should not need to tinker in the database, but
+  if you must, you can get in with
+
+          PGPASSWORD=passWORD psql -U irods -h localhost ICAT
 
 
 resources
