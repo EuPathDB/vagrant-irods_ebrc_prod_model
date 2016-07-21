@@ -97,7 +97,7 @@ Listed as `username/password`
   can run all the `iadmin` commands.
   - `wrkspuser/passWORD` : iRODS account for workspaces development.
   This has read/write rights to `/ebrc/workspaces`.
-  - `rods` : (no password) The operating system account that runs the irods
+  - `irods` : (no password) The operating system account that runs the irods
   processes. This system account is preconfigured with `icatadmin`
   credentials and that should not be changed. You can `sudo su - irods`
   to access this system account and then issue iCommands as the irods
