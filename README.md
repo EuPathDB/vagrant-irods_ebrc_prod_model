@@ -13,6 +13,9 @@ and to experiment with rules and microservices.
 It has no value to anyone outside the EBRC project and the vagrant box
 is not publicly accessible.
 
+The vagrant box is packaged from a box provisioned with
+git@github.com:mheiges/vagrant-irods_ebrc.git .
+
 Prerequisites
 =====
 
