@@ -18,4 +18,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision 'shell',
     inline: 'rm -rf /home/vagrant/.irods'
 
+  config.vm.provision "shell",
+    path: 'cleanup_remote_resources.sh'
+
 end
